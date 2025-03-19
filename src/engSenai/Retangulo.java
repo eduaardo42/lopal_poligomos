@@ -18,7 +18,7 @@ public class Retangulo {
 	}
 	
 	public double calcularPerimetro () {
-		double perimetro = base * 2 + altura * 2;
+		double perimetro = base + base + altura + altura;
 		return perimetro;
 	}
 	public void mostrarResultado () {
