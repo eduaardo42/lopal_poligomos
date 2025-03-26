@@ -25,7 +25,22 @@ public class Menu {
 		if (opcao == 1) {
 			QuadradoDao dao = new QuadradoDao();
 			dao.criarQuadrado();
-		} 
+		} else { System.out.println("Essa opção está em desenvolvimento...");}
 	}
 	
+	public static void continuar (Scanner leitor) {
+		
+		String resposta = "";
+		
+		while (!resposta.equals("S") || !resposta.equals("N")) {
+			System.out.println(  "Digite S para continuar ou N qualquer tecla para sair: ");
+			resposta = leitor.next();
+		}
+		
+		if (resposta.equalsIgnoreCase("S")) {
+			
+			engSenai.ui.Menu.mostrarMenu();
+		}
+	}
+
 }

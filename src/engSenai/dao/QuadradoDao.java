@@ -1,5 +1,6 @@
 package engSenai.dao;
 
+import java.awt.Menu;
 import java.util.Scanner;
 
 import engSenai.Quadrado;
@@ -20,8 +21,10 @@ public class QuadradoDao {
 		
 		quadrado.mostrarResultado();
 		
+		engSenai.ui.Menu.continuar(leitor);
+		
 		//Fechar o objeto scanner, remover da memória
-		leitor.close();
+		//leitor.close();
 		
 	}
 	
